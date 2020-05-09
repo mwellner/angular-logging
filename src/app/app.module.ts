@@ -16,10 +16,11 @@ import { AppComponent } from "./app.component";
     LoggerModule.forRoot({
       serverLoggingUrl: "http://localhost:3000/logs", // needs json-server running
       level: NgxLoggerLevel.DEBUG,
-      serverLogLevel: NgxLoggerLevel.ERROR
+      serverLogLevel: NgxLoggerLevel.ERROR,
+      enableSourceMaps: true
     })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
